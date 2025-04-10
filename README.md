@@ -35,10 +35,10 @@ docker build -t my-ast-tools .
 docker run -it --rm -v "$(pwd)":/usr/src/app my-ast-tools
 ```
 
-`001-hello-world/helloWorld.ts` を実行してみましょう。
+`001-hello-world` に移動して `helloWorld.ts` を実行してみましょう。
 
 ```bash
-node 001-hello-world/helloWorld.ts
+node --experimental-default-config-file helloWorld.ts
 ```
 
 `Hello, World!` と表示されれば正常に実行できています。
