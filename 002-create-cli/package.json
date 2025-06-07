@@ -1,0 +1,27 @@
+{
+  "name": "@did0es/002-create-cli",
+  "version": "1.0.2",
+  "main": "./dist/basicCli.js",
+  "scripts": {
+    "dev": "node --experimental-default-config-file",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "bin": {
+    "basic-cli": "./dist/basicCli.js",
+    "interactive-cli": "./dist/interactiveCli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "@typescript/native-preview": "^7.0.0-dev.20250607.1",
+    "typescript": "^5.8.3"
+  }
+}
