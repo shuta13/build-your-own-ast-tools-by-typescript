@@ -1,0 +1,22 @@
+{
+  "name": "002-create-cli",
+  "version": "1.0.0",
+  "main": "./dist/basicCli.js",
+  "scripts": {
+    "dev": "node --experimental-default-config-file",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "bin": {
+    "basic-cli": "./dist/basicCli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "typescript": "^5.8.3"
+  }
+}
