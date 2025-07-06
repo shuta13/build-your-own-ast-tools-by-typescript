@@ -16,7 +16,7 @@ export type Config = {
 
 console.log('Welcome to the Lint CLI!');
 
-const helpMessage = 'Usage: analyze-ast-cli <file-path> [--debug]';
+const helpMessage = 'Usage: lint-cli <file-path> [--debug]';
 
 // コマンドの引数を取得（0番目はnodeの実行パス、1番目はスクリプトのパスなので省く）
 const args = process.argv.slice(2);
