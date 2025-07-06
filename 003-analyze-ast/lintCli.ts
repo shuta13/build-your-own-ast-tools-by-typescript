@@ -6,7 +6,7 @@ import path from 'node:path';
 // カスタムコンソールモジュールをインポート
 import { debug, error, info } from './console.ts';
 import { createAst } from './createAst.ts';
-import { traverseAst } from './traverseAst.ts';
+import { checkAst } from './checkAst.ts';
 
 // configの型を定義
 export type Config = {
@@ -71,7 +71,10 @@ try {
   const ast = await createAst(absoluteInputPath);
 
   // AST を走査して情報を出力する
-  traverseAst(ast, 0, config);
+  const violated = checkAst(ast, 0, config);
+  if (!violated) {
+    info('No issues found');
+  }
 } catch (err) {
   if (err instanceof Error) {
     error(err.message);

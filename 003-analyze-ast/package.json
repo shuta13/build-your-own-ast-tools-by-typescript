@@ -13,7 +13,8 @@
   "description": "",
   "type": "module",
   "bin": {
-    "analyze-ast-cli": "./dist/analyzeAstCli.js"
+    "analyze-ast-cli": "./dist/analyzeAstCli.js",
+    "lint-cli": "./dist/lintCli.js"
   },
   "devDependencies": {
     "@types/node": "^22.15.30",
