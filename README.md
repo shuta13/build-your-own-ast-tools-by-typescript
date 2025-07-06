@@ -1,12 +1,12 @@
 # build-your-own-ast-tools-by-typescript
 
-「ASTの基礎知識とTypeScriptの環境構築から始めるCLIツール開発」のサンプルコード用リポジトリです。
+「TypeScriptでCLIを作って学ぶAST」のサンプルコード用リポジトリです。
 
 各回のコードは以下のディレクトリにあります。
 
-- 第1回: [TypeScriptでHello Worldする](./001-hello-world)
-- 第2回: [TypeScriptでCLIを作る](./002-create-cli)
-- 第3回: CLIからソースコードのASTを解析する
+- 第1回: [ASTの基礎知識とTypeScriptの環境構築から始めるCLIツール開発](./001-hello-world)
+- 第2回: [TypeScript×Node.jsでCLIを開発してnpmで公開する基本手順を学ぶ](./002-create-cli)
+- 第3回: [ASTを解析し、ソースコードをLintするCLIを開発する](./003-analyze-ast) 
 - 第4回: CLIからソースコードを変換する
 - 第5回: CLIからソースコードを生成する
 
