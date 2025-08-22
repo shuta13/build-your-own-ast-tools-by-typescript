@@ -81,7 +81,7 @@ function buildTsNodeFromAst(astNode: AstNode, depth = 0): ts.Node | null {
         identifierNode.text,
         undefined,
         toTsTypeNode(typeNode),
-        toTsPremitiveNode(initializerNode)
+        toTsPrimitiveNode(initializerNode)
       );
     }
 
@@ -93,9 +93,9 @@ function buildTsNodeFromAst(astNode: AstNode, depth = 0): ts.Node | null {
     case 'StringKeyword':
       return toTsTypeNode(astNode);
 
-    // Premitiveな値の場合、Literalノードを生成します
+    // Primitiveな値の場合、Literalノードを生成します
     case 'StringLiteral':
-      return toTsPremitiveNode(astNode);
+      return toTsPrimitiveNode(astNode);
 
     // 式文の場合、ExpressionStatementノードを生成します
     case 'ExpressionStatement': {
@@ -149,7 +149,7 @@ function toTsTypeNode(node: AstNode): ts.TypeNode {
   }
 }
 
-function toTsPremitiveNode(node: AstNode): ts.Expression {
+function toTsPrimitiveNode(node: AstNode): ts.Expression {
   switch (node.kind) {
     case 'StringLiteral':
       const isSingleQuote =
