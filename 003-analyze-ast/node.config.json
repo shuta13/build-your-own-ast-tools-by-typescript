@@ -1,5 +1,5 @@
 {
-  "$schema": "https://nodejs.org/dist/v23.10.0/docs/node-config-schema.json",
+  "$schema": "https://nodejs.org/dist/v24.22.1/docs/node-config-schema.json",
   "nodeOptions": {
     "disable-warning": ["ExperimentalWarning"],
     "experimental-transform-types": true,
